@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - HTML5 Öğrenci Portalı</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 20px;">
+
+    <header style="background-color: #e67e22; color: white; padding: 25px; text-align: center; border-radius: 8px;">
+        <h1 style="margin: 0; font-size: 2.2rem;">İletişim ve Geri Bildirim</h1>
+    </header>
+
+    <nav style="background-color: #784212; padding: 15px; margin-top: 15px; border-radius: 6px; text-align: center;">
+        <span style="color: white; font-weight: bold;"></span>
+        <a href="index.html" style="color: #ecf0f1; text-decoration: none; margin: 0 10px;">Anasayfa</a> |
+        <a href="dersler.html" style="color: #ecf0f1; text-decoration: none; margin: 0 10px;">Dersler ve Program</a> |
+        <a href="iletisim.html"
+            style="color: #f39c12; text-decoration: none; margin: 0 10px; font-weight: bold;">İletişim Formu</a>
+    </nav>
+
+    <hr style="border: 1px solid #dcdde1; margin: 20px 0;">
+
+    <main>
+        <section
+            style="background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h2 style="color: #d35400; border-bottom: 2px solid #f39c12; padding-bottom: 8px;">Öğretmen İletişim
+                Bilgileri</h2>
+            <p style="font-size: 1.05rem;">Sorularınız için e-posta gönderebilir veya aşağıdaki formu doldurabilirsiniz:
+            </p>
+
+            <p><b>E-posta:</b> <a href="mailto:ogretmen@okul.k12.tr"
+                    style="color: #e67e22; font-weight: bold;">ogretmen@okul.k12.tr</a></p>
+            <p><b>Ders Notları:</b> <a href="html5-ders-notlari.pdf" download
+                    style="color: #27ae60; font-weight: bold;">Ders Notlarını İndir (PDF)</a></p>
+        </section>
+
+        <!-- Form Alanı -->
+        <aside
+            style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h2 style="color: #d35400;">Öğrenci Görüş Formu</h2>
+
+            <form action="#" method="POST">
+
+                <fieldset style="border: 2px solid #f39c12; border-radius: 6px; padding: 15px; margin-bottom: 15px;">
+                    <legend
+                        style="background-color: #f39c12; color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold;">
+                        Öğrenci Kimlik Bilgileri</legend>
+
+                    <label for="adsoyad" style="font-weight: bold; color: #555;">Adınız Soyadınız:</label><br>
+                    <input type="text" id="adsoyad" name="adsoyad" placeholder="Ad Soyad" required
+                        style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;"><br>
+
+                    <label for="numara" style="font-weight: bold; color: #555;">Okul Numarası:</label><br>
+                    <input type="number" id="numara" name="numara"
+                        style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;"><br>
+
+                    <label for="sinif" style="font-weight: bold; color: #555;">Sınıf Seçiniz:</label><br>
+                    <select id="sinif" name="sinif"
+                        style="width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="9">9. Sınıf</option>
+                        <option value="10">10. Sınıf</option>
+                        <option value="11" selected>11. Sınıf</option>
+                        <option value="12">12. Sınıf</option>
+                    </select>
+                </fieldset>
+
+                <fieldset style="border: 2px solid #f39c12; border-radius: 6px; padding: 15px; margin-bottom: 15px;">
+                    <legend
+                        style="background-color: #f39c12; color: white; padding: 5px 10px; border-radius: 4px; font-weight: bold;">
+                        Ders Değerlendirmesi</legend>
+
+                    <label style="font-weight: bold; color: #555;">Proje Tamamlanma Durumu (Progress):</label><br>
+                    <progress value="70" max="100"
+                        style="width: 100%; height: 20px; margin-top: 5px; margin-bottom: 15px;">70%</progress><br>
+
+                    <label for="mesaj" style="font-weight: bold; color: #555;">Görüş ve Mesajınız:</label><br>
+                    <textarea id="mesaj" name="mesaj" rows="4" placeholder="Mesajınızı buraya yazınız..."
+                        style="width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;"></textarea><br>
+
+                    <button type="submit"
+                        style="background-color: #27ae60; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 1rem;">Gönder</button>
+                    <button type="reset"
+                        style="background-color: #c0392b; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 1rem; margin-left: 10px;">Temizle</button>
+                </fieldset>
+
+            </form>
+        </aside>
+    </main>
+
+    <footer
+        style="background-color: #e67e22; color: white; text-align: center; padding: 15px; border-radius: 8px; margin-top: 20px;">
+        <p style="margin: 0;">&copy; 2026 - HTML5 Okul Projesi</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa - HTML5 Öğrenci Portalı</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 20px;">
+
+    <!-- Üst Alan -->
+    <header style="background-color: #2c3e50; color: white; padding: 25px; text-align: center; border-radius: 8px;">
+        <h1 style="margin: 0; font-size: 2.2rem; color: #ecf0f1;">HTML5 Öğrenci Portalı</h1>
+        
+    </header>
+
+    <!-- Menü -->
+    <nav style="background-color: #34495e; padding: 15px; margin-top: 15px; border-radius: 6px; text-align: center;">
+        <span style="color: white; font-weight: bold;"></span>
+        <a href="index.html"
+            style="color: #3498db; text-decoration: none; margin: 0 10px; font-weight: bold;">Anasayfa</a> |
+        <a href="dersler.html" style="color: #ecf0f1; text-decoration: none; margin: 0 10px;">Dersler ve Program</a> |
+        <a href="iletisim.html" style="color: #ecf0f1; text-decoration: none; margin: 0 10px;">İletişim Formu</a>
+    </nav>
+
+    <hr style="border: 1px solid #dcdde1; margin: 20px 0;">
+
+    <!-- Ana İçerik Alanı -->
+    <main>
+        <section id="hakkinda"
+            style="background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h2 style="color: #2980b9; border-bottom: 2px solid #3498db; padding-bottom: 8px;">Hoş Geldiniz!</h2>
+            <p style="font-size: 1.05rem; line-height: 1.6;">Bu web sitesi, <b>HTML5 Öğrenme Birimi</b> kapsamında
+                öğrendiğimiz tüm etiketleri uygulamak amacıyla hazırlanmış <strong style="color: #e74c3c;">örnek bir
+                    okul projesidir</strong>.</p>
+            <p style="font-size: 1.05rem; line-height: 1.6;">Sitemizde gezinti yaparak öğrendiğimiz <mark
+                    style="background-color: #f1c40f; padding: 2px 5px;">anlamsal etiketleri</mark>, <i
+                    style="color: #8e44ad;">tabloları</i>, <u>medya elemanlarını</u> ve <sub
+                    style="color: #d35400;">form</sub> yapısını inceleyebilirsiniz.</p>
+        </section>
+
+        <section id="duyurular"
+            style="background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="color: #27ae60;">Önemli Duyurular (Listeler)</h3>
+
+            <h4 style="color: #16a085;">Yapılacak İşler Sırası:</h4>
+            <ol style="line-height: 1.6;">
+                <li>HTML5 etiketlerini tekrar ediniz.</li>
+                <li><del style="color: #95a5a6;">Kağıt üzerinde taslak çiziniz.</del> <span
+                        style="color: #27ae60; font-weight: bold;">(Tamamlandı)</span></li>
+                <li>Kodları editörde yazıp test ediniz.</li>
+            </ol>
+
+            <h4 style="color: #16a085;">Sitede Bulunan Modüller:</h4>
+            <ul style="line-height: 1.6;">
+                <li>Anasayfa ve Genel Bilgilendirme</li>
+                <li>Ders Programı ve Medya Galerisi</li>
+                <li>İletişim ve Anket Formu</li>
+            </ul>
+        </section>
+
+        <section id="medya"
+            style="background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="color: #d35400;">Tanıtım Medyaları</h3>
+
+            <p><b>Okul Görseli (&lt;img&gt;):</b></p>
+            <img src="okul.jpg" alt="Okul Binası" width="300" height="200"
+                style="border: 3px solid #bdc3c7; border-radius: 5px;">
+
+            <p><b>Ders Tanıtım Videosu (&lt;video&gt;):</b></p>
+            <video width="320" height="240" controls style="border: 3px solid #bdc3c7; border-radius: 5px;">
+                <source src="ornek-video.mp4" type="video/mp4">
+                Tarayıcınız video etiketini desteklemiyor.
+            </video>
+        </section>
+    </main>
+
+    <!-- Alt Bilgi -->
+    <footer
+        style="background-color: #2c3e50; color: white; text-align: center; padding: 15px; border-radius: 8px; margin-top: 20px;">
+        <p style="margin: 0;">&copy; 2026 - HTML5 Okul Projesi | Tüm Hakları Saklıdır.</p>
+        <p style="margin: 5px 0 0 0;"><a href="#hakkinda" style="color: #1abc9c; text-decoration: none;">Başa Dön</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

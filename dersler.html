@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dersler - HTML5 Öğrenci Portalı</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 20px;">
+
+    <header style="background-color: #8e44ad; color: white; padding: 25px; text-align: center; border-radius: 8px;">
+        <h1 style="margin: 0; font-size: 2.2rem;">Ders Programı ve Konu Başlıkları</h1>
+    </header>
+
+    <nav style="background-color: #512e5f; padding: 15px; margin-top: 15px; border-radius: 6px; text-align: center;">
+        <span style="color: white; font-weight: bold;"></span>
+        <a href="index.html" style="color: #ecf0f1; text-decoration: none; margin: 0 10px;">Anasayfa</a> |
+        <a href="dersler.html" style="color: #f1c40f; text-decoration: none; margin: 0 10px; font-weight: bold;">Dersler
+            ve Program</a> |
+        <a href="iletisim.html" style="color: #ecf0f1; text-decoration: none; margin: 0 10px;">İletişim Formu</a>
+    </nav>
+
+    <hr style="border: 1px solid #dcdde1; margin: 20px 0;">
+
+    <main>
+        <article
+            style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h2 style="color: #8e44ad; border-bottom: 2px solid #9b59b6; padding-bottom: 8px;">Haftalık Ders Programı
+                (Tablo Yapısı)</h2>
+            <p style="font-size: 1.05rem;">Aşağıdaki tabloda bu dönem işlenen HTML5 konuları yer almaktadır:</p>
+
+            <!-- Renkli Tablo Uygulaması -->
+            <table border="1" cellpadding="10"
+                style="width: 100%; border-collapse: collapse; border-color: #dcdde1; text-align: left;">
+                <thead>
+                    <tr style="background-color: #9b59b6; color: white;">
+                        <th>Gün</th>
+                        <th>Saat</th>
+                        <th>Konu Başlığı</th>
+                        <th>Açıklama</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #fcf3cf;">
+                        <td rowspan="2"><b>Pazartesi</b></td>
+                        <td>09:00 - 10:30</td>
+                        <td>HTML5 Belge Yapısı</td>
+                        <td>DOCTYPE, head, body, meta etiketleri</td>
+                    </tr>
+                    <tr style="background-color: #fcf3cf;">
+                        <td>10:40 - 12:10</td>
+                        <td>Metin ve Başlık Etiketleri</td>
+                        <td>h1-h6, p, b, i, strong, em, sub, sup</td>
+                    </tr>
+                    <tr style="background-color: #e8f8f5;">
+                        <td><b>Çarşamba</b></td>
+                        <td>13:00 - 15:00</td>
+                        <td>Listeler ve Tablolar</td>
+                        <td>ol, ul, table, tr, td, th elemanları</td>
+                    </tr>
+                    <tr style="background-color: #d1f2eb; text-align: center;">
+                        <td colspan="4"><b style="color: #16a085;">Cuma Günü: Proje Teslimi ve Değerlendirme</b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <section
+            style="background-color: white; padding: 20px; border-radius: 8px; margin-top: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+            <h3 style="color: #2980b9;">Dış Bağlantılar</h3>
+            <ul style="line-height: 1.8;">
+                <li><a href="https://www.w3schools.com/html/" target="_blank"
+                        style="color: #2980b9; font-weight: bold;">W3Schools HTML5 Rehberi (Yeni Sekmede Açılır)</a>
+                </li>
+                <li><a href="https://developer.mozilla.org/tr/docs/Web/HTML" target="_blank"
+                        style="color: #2980b9; font-weight: bold;">MDN Web Docs - HTML</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer
+        style="background-color: #8e44ad; color: white; text-align: center; padding: 15px; border-radius: 8px; margin-top: 20px;">
+        <p style="margin: 0;">&copy; 2026 - HTML5 Okul Projesi</p>
+    </footer>
+
+</body>
+
+</html>
